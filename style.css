@@ -1,0 +1,113 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #061F30;
+}
+
+canvas {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Suisse Screen';
+  src: url('Exported\ Fonts/Suisse Screen') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Suisse Screen';
+  src: url('Exported\ Fonts/Suisse Screen') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Suisse Screen', sans-serif;
+  color: #DEF7FF;
+  font-size: min(3vw, 30px); 
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  font-family: 'Suisse Screen', sans-serif;
+  color: #DEF7FF;
+  font-size: 18px;
+  font-size: min(2vw, 21px);
+  text-align: center;
+  margin: 20px 0;
+}
+
+p {
+  font-family: 'Suisse Screen', sans-serif;
+  color: #DEF7FF;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left;
+  padding: 0% 30%
+}
+
+button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #173F4C;
+  color: #DEF7FF;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin:10px
+}
+
+button:hover {
+  background-color: #AF223A;
+}
+
+#halfArc{
+  overflow: visible;
+}
+
+#chart-container{
+padding-bottom: 800px;
+}
+
+.image-container {
+  max-width: 100%;
+  padding: 10px 300px 40px 300px;
+  display: flex;
+  height: auto; 
+  overflow: hidden; 
+  align-items: center;
+}
+
+.responsive-image {
+  width: 100%; 
+  height: auto;
+  display: block; 
+  max-width: 100%; 
+}
+
+Titel {
+  position: absolute;
+  top: 80%;
+  left: 200px;
+  size: 20px;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+
+  p {
+   padding: 0% 20%
+  }
+
+  .image-container{
+    padding: 10px 50px
+  }
+  
+}
+

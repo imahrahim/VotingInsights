@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donut</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body {
+          text-align: center;
+      }
+  </style>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+  </head>
+
+  <body>
+    <h1>683 Abstimmungen in 130 Themen über 175 Jahre</h1>
+
+    <div>
+      <p>Erhalte zu allen Abstimmungen Einblicke in Medienarchive und erfahre wie die Schweizer Bevölkerung über politische Themen in der Vergangenheit abgestimmt hat. 
+ <br> <br>
+        Wähle ein aktuelles Abstimmungsthema oder stöbere durch alle Themen, um zu den Archivinhalten zu gelangen.  </p>
+      <button id="button"onclick="updateAndDrawChartWithScroll('Direkte Steuern')">Direkte Steuern</button>
+      <button id="button"onclick="updateAndDrawChartWithScroll('Umweltpolitik')">Umweltpolitik</button>
+      <button id="button"onclick="updateAndDrawChartWithScroll('Gesundheit')">Gesundheit</button>
+      
+    </div>
+    <div id="legende-container"></div>
+    
+    <script src="Legende.js"></script>
+
+ 
+    <!-- <div class="image-container">
+      <img src="Legende.png" alt="Legende für Kategorien" class="responsive-image" />
+    </div> -->
+
+
+    <h2>683 Abstimmungen in 12 Kategorien und 130 Themen</h2>
+   
+
+    <div id="chart-container"></div>
+    <script src="stimmbeteiligung_arc.js"></script>
+  </body>
+</html>
