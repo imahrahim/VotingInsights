@@ -561,7 +561,7 @@ function createHalfArcChart(data, selectedUnterThema) {
       d3.select(this).attr(
         "fill",
         yearData.get(d.data).includes(themaToHighlight)
-          ? colorHightlight
+          ? colorS
           : 'none'
       )
       .style("cursor", "default")
